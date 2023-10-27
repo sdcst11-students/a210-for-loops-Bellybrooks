@@ -25,3 +25,9 @@ example:
 Enter number:4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+
+for i in range(10):
+  double = 4 * i
+  print(f"The number right now is {i} and its doubled value is {i}")
+else:
+  print("We are finished!")

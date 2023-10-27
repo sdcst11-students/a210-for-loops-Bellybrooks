@@ -23,3 +23,9 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+total_purchases=float(input("enter the amount paid of purchased:$"))
+amount_paid_off=float(input("enter the amount paid off:$"))
+unpaid_balance=total_purchases-amount_paid_off
+interest=unpaid_balance *0.02
+total_balance=unpaid_balance+interest
+print("your total balance at the end of the month is:$",total_balance)

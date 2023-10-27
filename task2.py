@@ -14,3 +14,14 @@ Your GST is 2.75
 Your PST is 3.85
 Your total is 61.65
 """
+total_value=0
+
+for i in range(5):
+    price=float(input("enter the price of item{}:$".format(i+1)))
+    total_value+=price
+
+gst_ammount =total_value * 0.05 
+pst_ammount =total_value * 0.07 
+final_price= total_value + gst_ammount + pst_ammount
+print("the total value of all iteme is:${:2F}".format(total_value))
+print("the final price including 5% GST and 7% PST is: ${:.2f}".format(final_price))
